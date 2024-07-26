@@ -7,7 +7,7 @@ export class UserController {
   private readonly logger = new Logger(UserService.name);
 
 
-  @Get("nsights")
+  @Get("insights")
   async getUserInsights(@Query("accessToken") accessToken: string): Promise<any> {
     if (!accessToken) {
       this.logger.log(`Fetching user insights with access token: ${accessToken}`);
@@ -17,7 +17,7 @@ export class UserController {
     return this.userService.getUserInsights(accessToken);
   }
 
-  @Get("nsights/count")
+  @Get("insights/count")
   async getUserFriendsCount(@Query("userId") userId: string, @Query("accessToken") accessToken: string, ): Promise<any> {
     if (!accessToken) {
       this.logger.log(`Fetching user insights with access token: ${accessToken}`);
