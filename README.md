@@ -19,7 +19,7 @@ FACEBOOK_APP_SECRET=your_facebook_app_secret
 - Configure the OAuth Redirect URI as http://localhost:3000/auth/facebook/callback.
 
 
-###Running the Application
+### Running the Application
 ```
 npm run start
 ```
